@@ -1,0 +1,13 @@
+services:
+    backend:
+        image: homeworksecondbe:fancytag
+
+    frontend:
+        image: homeworksecondfe:fancytag
+        ports:
+        - 8080:8080
+        environment:
+            BACK_URL: http://backend:8080
+    
+        
+            
